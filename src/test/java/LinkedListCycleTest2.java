@@ -1,12 +1,11 @@
-import org.example.leetcode.LinkedListCycle.LinkedListCycle;
+import org.example.leetcode.LinkedListCycle.LinkedListCycle2;
 import org.example.leetcode.LinkedListCycle.ListNode;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-public class LinkedListCycleTest {
-	private final LinkedListCycle linkedListCycle = new LinkedListCycle();
+public class LinkedListCycleTest2 {
+	private final LinkedListCycle2 linkedListCycle2 = new LinkedListCycle2();
 	@Test
 	@DisplayName("Four arguments")
 	void normal_pattern1() {
@@ -15,7 +14,7 @@ public class LinkedListCycleTest {
 		listNode.next.next = new ListNode(0);
 		listNode.next.next.next = new ListNode(-4);
 		listNode.next.next.next.next = listNode.next;
-		assertTrue(linkedListCycle.hasCycle(listNode));
+		Assertions.assertEquals(listNode.next, linkedListCycle2.detectCycle(listNode));
 	}
 
 	@Test
@@ -24,13 +23,13 @@ public class LinkedListCycleTest {
 		ListNode listNode = new ListNode(1);
 		listNode.next = new ListNode(2);
 		listNode.next.next = listNode;
-		assertTrue(linkedListCycle.hasCycle(listNode));
+		Assertions.assertEquals(listNode.next.next, linkedListCycle2.detectCycle(listNode));
 	}
 
 	@Test
 	@DisplayName("One arguments")
 	void normal_pattern3() {
 		ListNode listNode = new ListNode(1);
-		assertFalse(linkedListCycle.hasCycle(listNode));
+		Assertions.assertEquals(null, linkedListCycle2.detectCycle(listNode));
 	}
 }
