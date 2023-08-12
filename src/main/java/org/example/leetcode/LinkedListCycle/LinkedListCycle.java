@@ -1,4 +1,4 @@
-package org.example.leetcode;
+package org.example.leetcode.LinkedListCycle;
 
 /*
 141. Linked List Cycle
@@ -24,37 +24,4 @@ public class LinkedListCycle {
 		}
 		return false;
 	}
-
-
-	/**
-	 * Definition for singly-linked list.
-	 * class ListNode {
-	 *     int val;
-	 *     ListNode next;
-	 *     ListNode(int x) {
-	 *         val = x;
-	 *         next = null;
-	 *     }
-	 * }
-	 */
 }
-
-class ListNode {
-	      int val;
-	      ListNode next;
-	      ListNode(int x) {
-	          val = x;
-	          next = null;
-	      }
-	  }
-
-  class main {
-	  public static void main(String[] args) {
-		  ListNode listNode = new ListNode(3);
-		  listNode.next = new ListNode(2);
-		  listNode.next.next = new ListNode(0);
-		  listNode.next.next.next = new ListNode(-4);
-		  listNode.next.next.next.next = listNode.next;
-		  System.out.println(new LinkedListCycle().hasCycle(listNode));
-	  }
-  }
