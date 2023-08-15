@@ -1,10 +1,12 @@
+package LinkedListCycle;
+
 import org.example.leetcode.LinkedListCycle.LinkedListCycle2;
 import org.example.leetcode.LinkedListCycle.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class LinkedListCycleTest2 {
+public class LinkedListCycle2Test {
 	private final LinkedListCycle2 linkedListCycle2 = new LinkedListCycle2();
 	@Test
 	@DisplayName("Four arguments")

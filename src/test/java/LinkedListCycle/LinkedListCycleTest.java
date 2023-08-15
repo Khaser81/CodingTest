@@ -1,3 +1,5 @@
+package LinkedListCycle;
+
 import org.example.leetcode.LinkedListCycle.LinkedListCycle;
 import org.example.leetcode.LinkedListCycle.ListNode;
 import org.junit.jupiter.api.DisplayName;
