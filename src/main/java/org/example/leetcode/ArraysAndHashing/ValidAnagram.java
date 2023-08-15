@@ -52,15 +52,17 @@ public class ValidAnagram {
         }
         Map<Character, Integer> hashMap = new HashMap<>();
         // Count the frequency of characters in string s　//Javaは、プリミティブcharのcharストリームを提供しないので無理
+        logger.info("hashMap="+ hashMap.toString());
         for (char x : s.toCharArray()) {
             hashMap.put(x, hashMap.getOrDefault(x, 0) + 1);
         }
         // Decrement the frequency of characters in string t
+        logger.info("hashMap="+ hashMap.toString());
         for (char x : t.toCharArray()) {
             hashMap.put(x, hashMap.getOrDefault(x, 0) - 1);
         }
         // Check if any character has non-zero frequency
-        logger.info("hashMap="+ hashMap);
+        logger.info("hashMap="+ hashMap.toString());
         for (int val : hashMap.values()) {
             if (val != 0) {
                 return false;
