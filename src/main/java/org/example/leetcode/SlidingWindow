@@ -1,0 +1,12 @@
+    public int maxProfit(int[] prices) {
+        int leastSoFar = Integer.MAX_VALUE;
+        int overallProfit = 0;
+        int profitIfSoldToday = 0;
+        
+        for(int i = 0; i < prices.length; i++){
+            leastSoFar = Math.min(prices[i], leastSoFar);
+            profitIfSoldToday = prices[i] - leastSoFar;
+            overallProfit = Math.max(overallProfit, profitIfSoldToday);
+        }
+        return overallProfit;
+    }
