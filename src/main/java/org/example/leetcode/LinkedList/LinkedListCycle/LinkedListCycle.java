@@ -1,4 +1,6 @@
-package org.example.leetcode.LinkedListCycle;
+package org.example.leetcode.LinkedList.LinkedListCycle;
+
+import org.example.leetcode.LinkedList.ListNode;
 
 /*
 141. Linked List Cycle

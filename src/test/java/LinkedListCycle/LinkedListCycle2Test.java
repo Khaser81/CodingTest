@@ -1,7 +1,7 @@
 package LinkedListCycle;
 
-import org.example.leetcode.LinkedListCycle.LinkedListCycle2;
-import org.example.leetcode.LinkedListCycle.ListNode;
+import org.example.leetcode.LinkedList.LinkedListCycle.LinkedListCycle2;
+import org.example.leetcode.LinkedList.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
