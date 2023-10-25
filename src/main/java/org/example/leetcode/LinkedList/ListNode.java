@@ -1,4 +1,4 @@
-package org.example.leetcode.LinkedListCycle;
+package org.example.leetcode.LinkedList;
 
 public class ListNode {
 	int val;
